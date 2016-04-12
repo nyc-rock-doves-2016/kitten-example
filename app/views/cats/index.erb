@@ -1,0 +1,10 @@
+This is the cat index page
+
+<% @cats.each do |cat|  %>
+<div>
+  <a href="/cats/<%= cat.id %>"><%= cat.name %></a>
+</div>
+<% end %>
+
+<a href="/cats/new">Add a cat</a>
+
